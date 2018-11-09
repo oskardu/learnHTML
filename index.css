@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Colfax-Regular';
+    src: url('font/Colfax-Regular.eot') format('embedded-opentype');
+  }
+  
+  @font-face {
+    font-family: 'Colfax-Regular';
+    src:url('font/Colfax-Regular.ttf')  format('truetype'), url('font/Colfax-Regular.svg#Colfax-Regular') format('svg');
+  }
+
+  @font-face {
+    font-family: 'Colfax-Bold';
+    src: url('font/bold/Colfax-Bold.eot') format('embedded-opentype');
+  }
+
+  @font-face {
+    font-family: 'Colfax-Bold';
+    src:url('font/bold/Colfax-Bold.ttf')  format('truetype'), url('font/bold/Colfax-Bold.svg#Colfax-Regular') format('svg');
+  }
+
+
+
+/* 设置body的font-family */
+body {
+    font-family: Colfax-Bold;
+    font-family: Colfax-Regular;
+
+
+  }
+
+
+.title1{
+    font-size: 72px;
+    line-height: 1.1;
+    letter-spacing: -3px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Colfax-Bold';
+}
+
+
+.p_regular{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #222222;
+    font-family: 'Colfax-Regular';
+    text-align: center;
+}
+
+
+.a_left{
+    color: rgb(0, 85, 255);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: center;
+    display: inline-block;   /*将元素显示为行内块状元素，设置该属性后，其他的行内块级元素会排列在同一行*/
+    margin-right: 20px;
+    /* text-decoration:none;    去除超链接的默认下划线 */
+}
+
+a:link,a:visited{
+    text-decoration:none;  /*超链接无下划线*/
+   }
+
+a:hover{
+    text-decoration:underline;  /*鼠标放上去有下划线*/
+   }
+
+
+
+/* 内容最大宽度 */
+.width_l{
+    max-width: 880px;
+}
+
+/* display:block为把非块级元素强制转换为块级元素显示，表现的和DIV一样，每个DIV占据一行，而且支持设置宽高 */
+.center_block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 文本选中状态的样式 */
+.selection{
+    background: rgba(0, 85, 255, .99);
+    color: white;
+}
