@@ -24,9 +24,17 @@
 body {
     font-family: Colfax-Bold;
     font-family: Colfax-Regular;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 
 
   }
+
+/* 文本选中之后文本背景和文本的颜色 */
+  ::selection {
+    background: rgba(0,85,255,.99);
+    color: #fff;
+}  
 
 
 .title1{
@@ -37,6 +45,7 @@ body {
     color: #000000;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: auto;
     font-family: 'Colfax-Bold';
 }
 
@@ -62,6 +71,9 @@ body {
     /* text-decoration:none;    去除超链接的默认下划线 */
 }
 
+
+
+
 a:link,a:visited{
     text-decoration:none;  /*超链接无下划线*/
    }
@@ -70,7 +82,35 @@ a:hover{
     text-decoration:underline;  /*鼠标放上去有下划线*/
    }
 
+/* 视频样式 */
+.video_radius_shadow{
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.075), 0 1px 4px rgba(0,0,0,.05), 0 10px 30px rgba(0,0,0,.06);
+}
 
+
+
+/* draw&style&export */
+.drawStyleExport{
+    margin-top: 120px;
+    text-align: center;
+    grid-gap: 40px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 120px auto 0 auto;
+}
+
+
+.h3{
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: 600;
+    font-family: "Colfax-Bold";
+}
 
 /* 内容最大宽度 */
 .width_l{
@@ -89,4 +129,114 @@ a:hover{
 .selection{
     background: rgba(0, 85, 255, .99);
     color: white;
+}
+
+
+
+.quote{
+    margin: 80px auto 80px auto;
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+}
+
+.quote svg{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translate(6px);
+}
+
+
+.quote cite{
+    margin-top: 12px;
+    display: inline-block;
+    color: #aaaaaa;
+    font-size: 18px;
+
+}
+
+
+
+.iconStyle{
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+
+
+.footer{
+    background: #000000;
+    position: relative;
+    z-index: 100;
+    padding: 40px 0 0 0;
+}
+
+
+.footer div{
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+}
+
+
+.footer h6{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: "Colfax-Bold";
+    font-weight: 600;
+}
+
+.footer li{
+    list-style: none;  /* 使列表无「·」和「。」*/
+}
+
+
+.footer a{
+    color: #888;
+    font-size: 14px;
+    line-height: 24px;
+    transition: all .2s ease;
+
+}
+
+footer a:hover{
+    text-decoration:none;
+    color:rgb(0, 153, 255);
+
+}
+
+.section{
+    width: 980px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+
+.ul{
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;   /*让弹性盒元素宽度不够的时候拆行 */
+}
+
+
+.footerSpan{
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+    transition: background .2s ease;
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 1px 3px 0;
+    border-radius: 2px;
+    font-family: "Colfax-Bold";
+    line-height: 18px;
 }
