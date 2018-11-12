@@ -206,7 +206,6 @@ a:hover{
 footer a:hover{
     text-decoration:none;
     color:rgb(0, 153, 255);
-
 }
 
 .section{
@@ -239,4 +238,35 @@ footer a:hover{
     border-radius: 2px;
     font-family: "Colfax-Bold";
     line-height: 18px;
+}
+
+
+footer span:hover{
+    background: rgb(0, 153, 255);
+    color:white;
+
+}
+
+.footerTwitter{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+
+/* 使图片不能被选中，也不能拖拽 */
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.copyright{
+    color: #444;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.copyright a:hover{
+    color: red;
 }

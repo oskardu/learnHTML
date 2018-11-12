@@ -11,6 +11,10 @@
 </style>
 
 
+<script type="text/javascript" src="index.js"></script>
+
+
+
 </head>
 
 
@@ -65,7 +69,7 @@
 <!-- quote -->
 <div class="quote">
   <figure style="position:relative">
-    <img style="webkit-user-drag:" src="images/justin-mezzel.png" width="50">
+    <img style="-webkit-user-drag:none;" src="images/justin-mezzel.png" width="50"></img>
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">
             <g>
               <defs>
@@ -292,7 +296,7 @@ The world’s most advanced tool for interactive design has arrived. Get started
 
             <li><a href="https://framer.com/company/">Company</a></li>
 
-            <li><a href="https://framer.com/careers">Careers <span class="footerSpan">NEW</span> </a></li>
+            <li><a href="https://framer.com/careers" onmouseover="mouseOver()" onmouseout="mouseOut()">Careers <span id="spannew" class="footerSpan">NEW</span> </a></li>
               
             <li><a href="https://framer.com/blog">Blog</a></li>
 
@@ -322,7 +326,31 @@ The world’s most advanced tool for interactive design has arrived. Get started
       </div>
   </section>
 
+
+<!-- footer twitter等图标&copyright -->
+<div style="display: flex;justify-content: space-between; width: 240px; margin: 0 auto;">
+  
+  <a class="footerTwitter" href="https://twitter.com/framer" target="_blank"> <img src="images/footer_twitter.png" width="24" height="24" id="img1" onmouseover="mouseOver1()" onmouseout="mouseOut1()"></img> </a>
+  
+  <a class="footerTwitter" href="https://www.facebook.com/framerjs/" target="_blank"> <img src="images/footer_facebook.png" width="24" height="24" id="img2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"></img> </a>
+  
+  <a class="footerTwitter" href="https://dribbble.com/framer" target="_blank"> <img src="images/footer_dribbble.png" width="24" height="24" id="img3" onmouseover="mouseOver3()" onmouseout="mouseOut3()"></img> </a>
+  
+  <a class="footerTwitter" href="https://medium.com/@framerteam" target="_blank"> <img src="images/footer_medium.png" width="24" height="24" id="img4" onmouseover="mouseOver4()" onmouseout="mouseOut4()"></img> </a>
+  
+  <a class="footerTwitter" href="https://www.youtube.com/channel/UCW5gUZ7lKGrAbLOkHv2xfbw" target="_blank"> <img src="images/footer_youtube.png" width="24" height="24" id="img5" onmouseover="mouseOver5()" onmouseout="mouseOut5()"></img> </a>
+  
+  <a class="footerTwitter" href="https://framer-slack-signup.herokuapp.com/" target="_blank"> <img src="images/footer_slack.png" width="24" height="24" id="img6" onmouseover="mouseOver6()" onmouseout="mouseOut6()"></img> </a>
+</div>
+
 </footer>
+
+<div style="background: black;text-align: center;padding-top: 16px;padding-bottom: 20px;">
+<p class="copyright">Copyright © 2018 Framer BV. All rights reserved.</p>
+<a class="copyright" href="https://github.com/oskardu/learnHTML" id="CookieSettings" onmouseover="mouseOver7()" onmouseout="mouseOut7()">Cookie Settings</a>
+</div>
+
+
 
 
 
