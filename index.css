@@ -60,6 +60,48 @@ nav li{
     list-style: none;
 }
 
+nav a{
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+
+nav a:hover{
+    color: #05f;
+    text-decoration: none;
+
+}
+
+
+
+/* 设置二级菜单的li的样式 */
+nav  ul  li  ul  li {
+    float: none;
+}
+
+/* 鼠标放在一级菜单上，显示二级菜单 */
+nav  ul  li:hover ul {
+    display: block;
+    transform: translateY(-5px);
+}
+
+
+/* 在二级菜单中，鼠标放上去的样式 */
+nav  ul  li  ul  li  a:hover {
+    color:white;
+    background-color:#05f;
+}
+
+/* 二级菜单分割线 */
+.subNav_divideLine{
+    box-shadow: 0 1px 0 rgba(0,0,0,.05); 
+}
+
+
+
+
+
+
 .nav-logo{
     height: 60px;
 
@@ -78,7 +120,7 @@ nav li{
     margin: auto;
 }
 
-
+/* try framer x for free  */
 .download-text{
     font-weight: 500;
     font-family: Colfax-Bold;
@@ -87,6 +129,34 @@ nav li{
     line-height: 1;
     position: relative;
     top: 1px;
+    transition: opacity .2s; /* 悬浮时透明度变化的动效 */
+}
+
+/* 'try framer x for free '悬浮效果 */
+.download-text:hover{
+    opacity: .5;
+}
+
+
+/* 设置二级菜单绝对定位，并隐藏 */
+.sub{
+    display: none;
+    border-radius: 4px;
+    position: absolute;
+    background: white;
+    min-width: 220px;
+    transform: translateY(-5px);
+    overflow: hidden;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05), 0 3px 6px rgba(0,0,0,.05), 0 10px 20px rgba(0,0,0,.05);
+    padding: 0;
+}
+
+
+.drawing{
+    display: block;
+    padding: 28px 20px;
+    line-height: 0;
+    font-size: 15px;
 }
 
 
